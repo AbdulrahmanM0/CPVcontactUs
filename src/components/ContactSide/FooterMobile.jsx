@@ -24,13 +24,13 @@ export default function FooterSide() {
                                 <li><a href="https://cpvglobal.com/en/home-english/"><HomeIcon /><span>Our Home Page</span></a></li>
                             </ul>
                         </div>
-                        <div>
+                        {/* <div>
                             <ul>
                                 <li><a className='light-link mb-3' href='https://www.facebook.com/profile.php?id=100086578377553'><FacebookIcon /></a></li>
                                 <li><a className='light-link mb-2' href="https://www.instagram.com/grupo_cpv/"><InstagramIcon /></a></li>
                                 <li><a className='light-link mb-2' href="https://www.linkedin.com/company/grupocpv/"><LinkedInIcon /></a></li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
             </Container>
         </div>

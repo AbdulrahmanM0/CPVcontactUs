@@ -24,7 +24,7 @@ export default function ContactSide() {
                             <ul>
                                 <li><a href="mailto:customercare@cpvarabia.com"><MailOutlineIcon /><span>Send an Email</span></a></li>
                                 <li><a href="#" style={{cursor:'auto'}}><LocalPhoneIcon /><span>+966920034242 </span></a></li>
-                                <li><a href="https://cpvglobal.com/en/home-english/"><HomeIcon /><span>Our Home Page</span></a></li>
+                                <li><a href="https://cpvarabia.com"><HomeIcon /><span>cpvarabia.com</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -32,13 +32,13 @@ export default function ContactSide() {
                 
             </Container>
         </div>
-        <div className='social-icons'>
+        {/* <div className='social-icons'>
             <ul>
                 <li><a href='https://www.facebook.com/profile.php?id=100086578377553'><FacebookIcon /></a></li>
                 <li><a href="https://www.instagram.com/grupo_cpv/"><InstagramIcon /></a></li>
                 <li><a href="https://www.linkedin.com/company/grupocpv/"><LinkedInIcon /></a></li>
             </ul>
-        </div>
+        </div> */}
     </div>
   )
 }

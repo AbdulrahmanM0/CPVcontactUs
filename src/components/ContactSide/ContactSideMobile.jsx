@@ -17,11 +17,11 @@ export default function ContactSide() {
             <Container>
                 <div className="content-center brand">
                     <div className='p-3 logo-img d-flex'><div><img src={Logo} alt='CPV' /></div>            
-                    <ul>
+                    {/* <ul>
                         <li><a href='https://www.facebook.com/profile.php?id=100086578377553'><FacebookIcon /></a></li>
                         <li><a href="https://www.instagram.com/grupo_cpv/"><InstagramIcon /></a></li>
                         <li><a href="https://www.linkedin.com/company/grupocpv/"><LinkedInIcon /></a></li>
-                    </ul>
+                    </ul> */}
                     </div>
                 </div>
             </Container>
