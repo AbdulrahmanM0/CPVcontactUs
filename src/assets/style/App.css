@@ -1,0 +1,89 @@
+.page-layout{
+    min-height: 100vh;
+    background-image: url('https://demos.creative-tim.com/blk-design-system-react/static/media/dots.1e305f98.png');
+    background-size: contain;
+    background: rgb(9,5,79);
+    background: linear-gradient(356deg, rgba(9,5,79,1) 0%, rgba(7,7,90,1) 62%, rgba(14,43,146,1) 100%);
+    position: relative;
+    /* overflow: hidden; */
+}
+.index-page .squares {
+    animation: move-left-right 1s infinite;
+    background: #2c34c9;
+    background: -webkit-linear-gradient(0deg, #546ff5 0%, #584ee1 100%);
+    background: -o-linear-gradient(0deg, #547cf5 0%, #4e5fe1 100%);
+    background: -moz-linear-gradient(0deg, #3d2db5 0%, #2038eb 100%);
+    background: linear-gradient(0deg, #3b53e8 0%, #4e4ee1 100%);
+    position: absolute;
+    transition: 0.5s ease-out;
+    overflow: hidden;
+    border-radius: 20%;
+  }
+  .index-page .squares.square1 {
+    animation: move-left-right 4s infinite;
+    height: 300px;
+    width: 300px;
+    opacity: 0.5;
+    left: 3%;
+    top: -21%;
+  }
+  .index-page .squares.square2 {
+    animation: move-left-right 6s infinite;
+    height: 400px;
+    width: 400px;
+    opacity: 0.4;
+    right: -5%;
+    top: -12%;
+  }
+  .index-page .squares.square3 {
+    animation: move-left-right 5s infinite;
+    height: 200px;
+    width: 200px;
+    opacity: 0.1;
+    left: -5%;
+    bottom: 0%;
+  }
+  .index-page .squares.square4 {
+    animation: move-left-right 10s infinite;
+    height: 100px;
+    width: 100px;
+    opacity: 0.9;
+    right: 27%;
+    top: 70%;
+  }
+  .index-page .squares.square5 {
+    animation: move-left-right 6s infinite;
+    height: 250px;
+    width: 250px;
+    opacity: 0.1;
+    left: 32%;
+    bottom: 29%;
+  }
+  .index-page .squares.square6 {
+    animation: move-left-right 9s infinite;
+    left: 10%;
+    top: 35%;
+    height: 80px;
+    width: 80px;
+    opacity: 0.8;
+  }
+  .index-page .squares.square7 {
+    animation: move-left-right 3s infinite;
+    width: 300px;
+    height: 300px;
+    right: -5%;
+    bottom: 0%;
+    opacity: 0.1;
+  }
+
+  @keyframes move-left-right {
+    0% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(-10px);
+    }
+  }
