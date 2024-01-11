@@ -20,7 +20,7 @@ export default function FooterSide() {
                         <div className='contact-icons container'>
                             <ul>
                                 <li><a href="mailto:customercare@cpvarabia.com"><MailOutlineIcon /><span>Send an Email</span></a></li>
-                                <li><a href="#" style={{cursor:'auto'}}><LocalPhoneIcon /><span>+966920034242 </span></a></li>
+                                <li><a href="#" style={{cursor:'auto'}}><LocalPhoneIcon /><span>920034242 </span></a></li>
                                 <li><a href="https://cpvglobal.com/en/home-english/"><HomeIcon /><span>Our Home Page</span></a></li>
                             </ul>
                         </div>
