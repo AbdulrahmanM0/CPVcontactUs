@@ -21,7 +21,7 @@ export default function FooterSide() {
                             <ul>
                                 <li><a href="mailto:customercare@cpvarabia.com"><MailOutlineIcon /><span>Send an Email</span></a></li>
                                 <li><a href="#" style={{cursor:'auto'}}><LocalPhoneIcon /><span>920034242 </span></a></li>
-                                <li><a href="http://cpvarabia.com"><HomeIcon /><span>cpvarabia.com</span></a></li>
+                                <li><a href="https://cpvarabia.com"><HomeIcon /><span>cpvarabia.com</span></a></li>
                             </ul>
                         </div>
                         {/* <div>
