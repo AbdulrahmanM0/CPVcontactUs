@@ -23,7 +23,7 @@ export default function ContactSide() {
                         <div className='contact-icons container'>
                             <ul>
                                 <li><a href="mailto:customercare@cpvarabia.com"><MailOutlineIcon /><span>Send an Email</span></a></li>
-                                <li><a href="#" style={{cursor:'auto'}}><LocalPhoneIcon /><span>+966920034242 </span></a></li>
+                                <li><a href="#" style={{cursor:'auto'}}><LocalPhoneIcon /><span>920034242 </span></a></li>
                                 <li><a href="https://cpvarabia.com"><HomeIcon /><span>cpvarabia.com</span></a></li>
                             </ul>
                         </div>
