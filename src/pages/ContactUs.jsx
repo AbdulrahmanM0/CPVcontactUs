@@ -4,10 +4,13 @@ import Form from '../components/Form/Form'
 import ContactSide from '../components/ContactSide/ContactSide'
 import ContactSideMobile from '../components/ContactSide/ContactSideMobile'
 import FooterSide from '../components/ContactSide/FooterMobile'
+import { Alert, Button, Snackbar } from '@mui/material'
+import Confirm from '../components/Confirm/Confirm'
 
 export default function ContactUs() {
     const [mobieBuild,setMobileBuild] = useState(false)
-
+    const [submited,setSubmited] = useState(false)
+    
     useEffect(()=>{
         window.innerWidth <= 768 ? setMobileBuild(true) : setMobileBuild(false)
         window.onresize = () =>  window.innerWidth <= 768 ? setMobileBuild(true) : setMobileBuild(false)
@@ -30,8 +33,14 @@ export default function ContactUs() {
                 <Col bg={8} md={7} sm={12}>
                     <div className='p-4'>
                     <div className='rounded p-4' style={{backgroundColor: '#f6f9ff'}}>
-                        <small className='fw-bold text-secondary' style={{fontSize: '12px'}}>Tell Us about yourself .</small>
-                        <Form />
+                    {!submited ?
+                        <>
+                            <small className='fw-bold text-secondary' style={{fontSize: '12px'}}>Tell Us about yourself .</small>
+                            <Form setSubmited={setSubmited}/>
+                        </>
+                        :
+                            <Confirm />
+                        }
                     </div>
                     </div>
                 </Col>
@@ -52,6 +61,6 @@ export default function ContactUs() {
             }
 
         </Container>
-    </div>
+            </div>
   )
 }
