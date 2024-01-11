@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import { Col } from 'reactstrap';
+import { Col, Spinner } from 'reactstrap';
 
-export default function Form() {
+export default function Form({setSubmited}) {
+  const [submitted ,setSubmitted] = useState(false)
+
   const formik = useFormik({
     initialValues: {
       name: '',
@@ -26,10 +28,13 @@ export default function Form() {
       reason: Yup.string().required('Reason is required'),
     }),
     onSubmit: (values) => {
+      setSubmitted(true)
       // Handle form submission logic here
-      axios.post('https://admin.cpvarabia.com/Care/contact.php').then(
-        response => console.log(response).catch(error => console.log(error))
-      )
+      axios.post('https://admin.cpvarabia.com/Care/contact.php')
+      .then(
+        response => setSubmited(true))
+      .catch(
+        error => console.log(error))
       console.log(values);
     },
   });
@@ -132,9 +137,13 @@ export default function Form() {
         <div className='mb-3'></div>
 
         <Col>
+        {!submitted ?
         <Button type="submit" className='w-50 d-block m-auto' variant="contained" color="primary">
           Submit
         </Button>
+        :
+        <div className='text-center'><Spinner color='primary' /></div>
+        }
         </Col>
       </form>
     </div>
