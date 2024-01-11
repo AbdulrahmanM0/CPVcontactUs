@@ -16,13 +16,13 @@ export default function Form() {
       reason: '',
     },
     validationSchema: Yup.object({
-      name: Yup.string().required('Name is required'),
-      phone: Yup.string()
-        .matches(/^[0-9]+$/, 'Phone must be a valid number')
-        .required('Phone is required'),
+      // name: Yup.string().required('Name is required'),
+      // phone: Yup.string()
+      //   .matches(/^[0-9]+$/, 'Phone must be a valid number')
+      //   .required('Phone is required'),
       email: Yup.string().email('Invalid email address').required('Email is required'),
-      company: Yup.string().required('Company is required'),
-      jobtitle: Yup.string().required('Job Title is required'),
+      // company: Yup.string().required('Company is required'),
+      // jobtitle: Yup.string().required('Job Title is required'),
       reason: Yup.string().required('Reason is required'),
     }),
     onSubmit: (values) => {
