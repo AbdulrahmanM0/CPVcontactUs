@@ -31,7 +31,7 @@ export default function Form({setSubmited}) {
     onSubmit: (values) => {
       setSubmitted(true)
       // Handle form submission logic here
-      axios.post('https://admin.cpvarabia.com/Care/contacts.php')
+      axios.post('https://admin.cpvarabia.com/Care/contacts.php',values)
       .then(
         response => setSubmited(true))
       .catch(
