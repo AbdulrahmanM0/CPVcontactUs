@@ -4,6 +4,7 @@ import * as Yup from 'yup';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { Col, Spinner } from 'reactstrap';
+import axios from 'axios';
 
 export default function Form({setSubmited}) {
   const [submitted ,setSubmitted] = useState(false)
@@ -18,7 +19,7 @@ export default function Form({setSubmited}) {
       reason: '',
     },
     validationSchema: Yup.object({
-      // name: Yup.string().required('Name is required'),
+      name: Yup.string().required('Name is required'),
       // phone: Yup.string()
       //   .matches(/^[0-9]+$/, 'Phone must be a valid number')
       //   .required('Phone is required'),
@@ -30,12 +31,11 @@ export default function Form({setSubmited}) {
     onSubmit: (values) => {
       setSubmitted(true)
       // Handle form submission logic here
-      axios.post('https://admin.cpvarabia.com/Care/contact.php')
+      axios.post('https://admin.cpvarabia.com/Care/contacts.php')
       .then(
         response => setSubmited(true))
       .catch(
         error => console.log(error))
-      console.log(values);
     },
   });
 
