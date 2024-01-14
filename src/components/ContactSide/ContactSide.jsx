@@ -18,7 +18,7 @@ export default function ContactSide() {
             <Container>
                 <div className="content-center brand">
                     <div className='p-3 logo-img'><img src={Logo} alt='CPV' /></div>
-                    <div className='z-1 bannar mb-5' ><h1>Let Us discuss on <br/> something <span className='text-primary'>together</span>.</h1></div>
+                    <div className='z-1 bannar mb-5' ><h1><span className='text-primary' >Contact Us </span>for <br/> a <span>Quality-Driven </span>Discussion.</h1></div>
                     <div className="d-none d-sm-block text-white">
                         <div className='contact-icons container'>
                             <ul>
