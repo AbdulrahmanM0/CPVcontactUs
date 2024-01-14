@@ -15,7 +15,7 @@ export default function FooterSide() {
         <div className='cover'></div>
         <div className='content-container'>
             <Container>
-                <div className='z-1 bannar mb-2' ><h1>Let Us discuss on <br/> something <span className='text-primary'>together</span>.</h1></div>
+                <div className='z-1 bannar mb-2' ><h1><span className='text-primary' >Contact Us </span> for <br/> a <span>Quality-Driven </span> <br/>Discussion.</h1></div>
                     <div className="d-flex text-white">
                         <div className='contact-icons container'>
                             <ul>
